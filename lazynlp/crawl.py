@@ -109,7 +109,7 @@ def download_page(link, context=None, headers=None, timeout=None):
 
 	When code is not 0, return ''
 	"""
-    headers = headers if headers else {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"}
     try:
         req = urllib.request.Request(link, headers=headers)
     except ValueError as e:
